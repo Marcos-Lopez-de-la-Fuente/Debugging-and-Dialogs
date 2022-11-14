@@ -1,11 +1,13 @@
 package com.example.dialogs;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Attributes
     private Button btnDialog;
-    private Button goToTest;
+    private Button advancedDialog;
     private TextView textViewMain;
 
 
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         this.btnDialog = this.findViewById(R.id.btnDialog);
-        this.goToTest = this.findViewById(R.id.goToTest);
+        this.advancedDialog = this.findViewById(R.id.advancedDialog);
         this.textViewMain = this.findViewById(R.id.textViewMain);
 
 
@@ -34,19 +36,19 @@ public class MainActivity extends AppCompatActivity {
 
             builder.setTitle("Hello");
 
-            builder.setMessage("Miassatge Alert");
+            builder.setMessage("Message Alert");
 
             builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    textViewMain.setText("Has Pitjat CANCEL");
+                    textViewMain.setText("You pressed CANCEL");
                 }
             });
 
             builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    textViewMain.setText("Has Pitjat OK");
+                    textViewMain.setText("You pressed OK");
                 }
             });
 
@@ -55,9 +57,31 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        this.goToTest.setOnClickListener(view ->
-                this.startActivity(new Intent(this, TestActivity.class))
-        );
+        this.advancedDialog.setOnClickListener(view -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
+            builder.setView(R.layout.advanced_dialog);
+
+
+            builder.setMultiChoiceItems(R.array.arrayTest, null, new DialogInterface.OnMultiChoiceClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                }
+            });
+
+
+            builder.setPositiveButton("Sign in", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
+                }
+            });
+            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                }
+            });
+
+
+            builder.create().show();
+        });
     }
 }

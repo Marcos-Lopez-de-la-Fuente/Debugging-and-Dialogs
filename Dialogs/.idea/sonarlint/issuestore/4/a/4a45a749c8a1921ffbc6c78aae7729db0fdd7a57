@@ -1,9 +1,21 @@
 
-J
-java:S1604'"(Make this anonymous inner class a lambda(çÄİöøÿÿÿÿ8Û«’ÁÆ0
-J
-java:S1604."(Make this anonymous inner class a lambda(ĞÌú·øÿÿÿÿ8Ü«’ÁÆ0
+C
+java:S1604)"(Make this anonymous inner class a lambda(çÄİöøÿÿÿÿ
+C
+java:S16040"(Make this anonymous inner class a lambda(ĞÌú·øÿÿÿÿ
+C
+java:S1604B"(Make this anonymous inner class a lambda(–£ñÇşÿÿÿÿ
+C
+java:S1604I"(Make this anonymous inner class a lambda(É¸Ëùÿÿÿÿ
+C
+java:S1604N"(Make this anonymous inner class a lambda(çÄİöøÿÿÿÿ
+x
+java:S1450"]Remove the "advancedDialog" field and declare it as a local variable in the relevant methods.(ºÇøÿÿÿÿ
 s
-java:S1450"XRemove the "btnDialog" field and declare it as a local variable in the relevant methods.(åÈ–íúÿÿÿÿ
-t
-java:S1450"WRemove the "goToTest" field and declare it as a local variable in the relevant methods.(Ÿ¿‘ª8ùÅÁÆ0
+java:S1450"XRemove the "btnDialog" field and declare it as a local variable in the relevant methods.(åÈ–íúÿÿÿÿ
+œ
+java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãîÜˆùÿÿÿÿ
+—
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ı§„Ô
+
+java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ı§„Ô8©£êœÇ0

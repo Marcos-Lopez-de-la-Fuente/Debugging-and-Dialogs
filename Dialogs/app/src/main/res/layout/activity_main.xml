@@ -20,11 +20,11 @@
             android:text="Dialog" />
 
         <Button
-            android:id="@+id/goToTest"
+            android:id="@+id/advancedDialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tests"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="10dp"
+            android:text="Advanced dialog" />
 
     </LinearLayout>
 
